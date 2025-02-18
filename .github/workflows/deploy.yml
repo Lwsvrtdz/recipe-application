@@ -26,15 +26,6 @@ jobs:
       - name: Build application
         run: npm run build
 
-      - name: Synchronize Files To Server
-        uses: easingthemes/ssh-deploy@main
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SOURCE: "."  # We only need to sync the built files
-          REMOTE_HOST: ${{ secrets.VPS_HOST }}
-          REMOTE_USER: ${{ secrets.VPS_USER }}
-          TARGET: "/var/www/recipe-application"
-
       - name: Execute deployment commands
         uses: appleboy/ssh-action@master
         with:
