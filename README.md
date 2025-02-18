@@ -1,75 +1,32 @@
-# Nuxt Minimal Starter
+# Recipe Application
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This project is a practice exercise to explore the latest features of NuxtJS, as I haven't worked with it in a while. It's an opportunity to refresh my skills and discover what's new in the framework.
 
-## Setup
+## Project Overview
 
-Make sure to install dependencies:
+- Built with NuxtJS 3
+- Utilizes Tailwind CSS for styling
+- Implements Vue Router for navigation
+- Incorporates Google Fonts for typography
 
-```bash
-# npm
-npm install
+## Continuous Integration and Deployment (CI/CD)
 
-# pnpm
-pnpm install
+This project uses GitHub Actions for CI/CD. The workflow includes:
 
-# yarn
-yarn install
+- Automatic deployment on pushes to the master branch
+- Manual deployment option via workflow dispatch
+- Building and testing the application
+- Deploying to a VPS using SSH
 
-# bun
-bun install
-```
+For more details, see the `.github/workflows/deploy.yml` file.
 
-## Development Server
+## Getting Started
 
-Start the development server on `http://localhost:3000`:
+1. Clone the repository
+2. Install dependencies: `npm ci`
+3. Run the development server: `npm run dev`
+4. Build for production: `npm run build`
 
-```bash
-# npm
-npm run dev
+## Future Improvements
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- [Add your planned features or improvements here]
