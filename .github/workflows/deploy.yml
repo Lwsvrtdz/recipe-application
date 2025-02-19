@@ -54,7 +54,7 @@ jobs:
             npm run build
             # Install PM2 globally if not already installed
             if ! command -v pm2 &> /dev/null; then
-              sudo npm install -g pm2
+              npm install -g pm2
             fi
             # Start or restart the application with PM2
             pm2 restart ecosystem.config.js || pm2 start ecosystem.config.js
